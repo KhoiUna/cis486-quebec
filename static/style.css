@@ -1,0 +1,55 @@
+body {
+  background-color: gainsboro;
+}
+
+nav {
+  text-align: right;
+}
+nav a {
+  padding: 0 0.5rem;
+}
+
+.post_container {
+  border: 3px solid #000;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: #fff;
+}
+
+.delete {
+  text-align: right;
+}
+.delete input {
+  background-color: red;
+  font-size: large;
+  border-radius: 8px;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.status {
+  font-size: large;
+}
+
+.image_container {
+  max-width: 400px;
+  margin: auto;
+}
+
+.form_container {
+  border: 3px solid #000;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.inputs {
+  font-size: large;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 6px;
+  margin: 0.5rem;
+}

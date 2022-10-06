@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Quebec | Post</title>
+  </head>
+
+  <body>
+    <h1 style="text-align: center">Welcome to Hackable Blog!</h1>
+
+    <nav>
+      <a href="/">Home</a>
+      <a href="/post">Post</a>
+    </nav>
+
+    <form class="form_container" action="/post" method="post">
+      <h2>Post form</h2>
+
+      <div>
+        <textarea
+          class="inputs"
+          required
+          placeholder="What is your status?"
+          name="status"
+        ></textarea>
+      </div>
+
+      <div>
+        <input
+          class="inputs"
+          required
+          type="text"
+          name="image_url"
+          placeholder="Your image link"
+        />
+      </div>
+
+      <button type="submit">Post</button>
+    </form>
+  </body>
+</html>
