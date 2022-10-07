@@ -6,7 +6,7 @@ module.exports = class PostUtil {
     try {
       const collection = client.db("quebec").collection("posts");
 
-      const posts = collection.find().toArray();
+      const posts = collection.find().sort("_id", -1).toArray();
       if (!posts) return false;
 
       return posts;
@@ -60,7 +60,6 @@ module.exports = class PostUtil {
       const updateDoc = {
         $set: {
           status: postData.status,
-          image_url: postData.image_url,
         },
       };
 

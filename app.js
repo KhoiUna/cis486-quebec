@@ -29,7 +29,7 @@ app.post("/post", async (req, res) => {
 
     if (!response) throw new Error();
 
-    res.redirect("/post");
+    res.redirect("/");
   } catch (error) {
     return res.status(500).json("Internal server error");
   }
@@ -49,7 +49,7 @@ app.post("/delete/:postId", async (req, res) => {
 
 app.post("/update/:postId", async (req, res) => {
   try {
-    // TODO
+    const response = await PostUtil.updatePost(req.params.postId, req.body);
 
     if (!response) throw new Error();
 
