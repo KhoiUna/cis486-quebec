@@ -59,7 +59,7 @@ module.exports = class PostUtil {
 
       const updateDoc = {
         $set: {
-          status: postData.status,
+          status: postData.status.trim(),
         },
       };
 
