@@ -35,8 +35,10 @@ h1 {
 .update {
   background-color: #ffff50d0;
   font-size: large;
-  border-radius: 8px;
+  border-radius: 10px;
   cursor: pointer;
+  color: #000;
+  border: 2px solid #000;
 }
 
 .delete {
@@ -49,6 +51,7 @@ h1 {
   border-radius: 8px;
   padding: 4px;
   cursor: pointer;
+  border: 2px solid #000;
 }
 
 .status {
